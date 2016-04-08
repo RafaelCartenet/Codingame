@@ -1,0 +1,1 @@
+print(*[(chr(97+(ord(i)-ord(j))%26),' ')[i==' ']for i,j in zip(input(),input())],sep='')
