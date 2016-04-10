@@ -1,11 +1,12 @@
 def isPrime(n):
 	return 2 in[n,2**n%n]
 
-l=[]
+res=0
+
 n = int(input())
 for _ in range(n):
     number = int(input())
     if number != 0:
-        if isPrime(number):l.append(number)
+        if isPrime(number):res=max(res,number)
 
-print(max(l))
+print(res)
